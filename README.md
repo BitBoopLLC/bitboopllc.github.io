@@ -31,4 +31,8 @@ The workflow copies only public site files into `_site`; repository documentatio
 
 Brand assets were copied from `../bit-boop-branding/`. Space Grotesk is distributed under the SIL Open Font License included in `assets/fonts/SpaceGrotesk-OFL.txt`.
 
-The site currently uses the GitHub Pages URL. When connecting a custom domain, update the canonical site URLs in the Open Graph metadata, `robots.txt`, and `sitemap.xml`, and configure the domain in GitHub Pages. Add an HTML canonical link then if desired. No custom domain or contact email is assumed.
+## Link previews
+
+The canonical site URL is `https://bitboop.dev/`. Open Graph and Twitter card tags in `index.html` reference `social-preview.png` (1200 × 630). The editable SVG source is `assets/social-preview.svg`; it uses the official brand logos and Space Grotesk typography. The source font is included in `assets/fonts/`.
+
+Render the SVG with an SVG renderer that has Space Grotesk available, keeping the PNG at 1200 × 630. Both publishing methods include the PNG: root publishing from `main`, or the existing Actions workflow. Platforms choose how to display the card and may cache older previews. Real Messages/social previews can only be confirmed after deployment.
